@@ -8,4 +8,4 @@ This is fun app, created using Vanilla JS.
 * Show the result to user with some graphics.
 
 ## Stack
-HTML,CSS and Vanilla JS and hosted on []Netlify](https://www.netlify.com/)
+HTML,CSS and Vanilla JS and hosted on [Netlify](https://www.netlify.com/)
