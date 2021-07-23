@@ -5,16 +5,20 @@ const outputDiv = document.querySelector(".output");
 
 const checkButton = document.querySelector("#check");
 
-const outputlucky = "<div><h2>Heeey You are a Lucky <h2><img width='100%' src='' /></div>"
-const outputnotlucky = "<div><h1>Sorry ,Your Birthdate is not a lucky number </h1></div>"
+const outputlucky = "<div><h2>Heeey You are a Lucky <h2><img class ='resultImage' width='100%' src='images/luckyImage.svg' /></div>"
+const outputnotlucky = "<div><h1>Sorry ,Your Birthdate is not a lucky number </h1><img class ='resultImage' width='100%' src= 'images/notLucky.svg'/></div>"
 
-checkButton.addEventListener("click",()=>{
-    
+checkButton.addEventListener("click",(e)=>{
+    e.preventDefault();
+   while ( luckyNumber.value<null || date.value===undefined ){
 
+    alert("Enter valid input");
+
+   }
     const dateString = ((date.value).split('-')).join("");
     var sum=0;
+    
     // converting string to letter
-    console.log("ss");
     for( ele in dateString){
         sum = sum + Number(ele);
     }
@@ -24,12 +28,14 @@ checkButton.addEventListener("click",()=>{
     // Checking if Date is divisible by Lucky Number
     
     if (sum%luckyno === 0){
-        console.log("lucky");
+        console.log("lucky",sum);
+        
         return outputDiv.innerHTML = outputlucky;
     }
     else{
-            return outputDiv.innerHTML = outputlucky;
             console.log("NOt Lucky");
+            return outputDiv.innerHTML = outputnotlucky;
+           
     }
     
 })
