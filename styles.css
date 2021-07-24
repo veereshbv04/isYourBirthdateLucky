@@ -9,6 +9,7 @@ body{
     margin: 0rem;
     /* background-image: image(); */
     background-image: url(/images/main_background_img.svg);
+    
 }
 
 /* 
@@ -48,10 +49,9 @@ img{
     border-color: var(--primary-backgroundcolor);
     font-size: 1rem;
     font-style: italic;
-    
-   
-    
+ 
 }
+
 @media (max-width:460px){
     .main-div{
         max-width : 80%;
@@ -100,4 +100,7 @@ button{
     border-width: 0.5rem;
     border-style: solid;
     cursor: pointer;
+}
+#github a{
+    text-decoration: none;
 }
