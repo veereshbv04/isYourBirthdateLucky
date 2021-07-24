@@ -10,7 +10,7 @@ const outputnotlucky = "<div><h1>Sorry ,Your Birthdate is not a lucky number </h
 
 checkButton.addEventListener("click",(e)=>{
     e.preventDefault();
-   while ( luckyNumber.value<null || date.value===undefined ){
+   if(luckyNumber.value<null || date.value===undefined ){
 
     alert("Enter valid input");
 
