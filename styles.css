@@ -121,4 +121,5 @@ button{
     color: rgba(252, 26, 26, 0.822);
     background-color: rgb(158, 255, 93);
     margin-top: 2rem;
+    cursor: pointer;
 }
