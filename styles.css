@@ -104,3 +104,21 @@ button{
 #github a{
     text-decoration: none;
 }
+
+#alert-box{
+    background-color: rgba(252, 26, 26, 0.822);
+    max-width: fit-content;
+    padding: 1rem 2rem;
+    font-weight:bold;
+    font-size: larger;
+    margin: auto;
+    margin-bottom: 1rem;
+    color: rgb(158, 255, 93);
+   
+}
+
+#alert-close{
+    color: rgba(252, 26, 26, 0.822);
+    background-color: rgb(158, 255, 93);
+    margin-top: 2rem;
+}

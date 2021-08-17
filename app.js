@@ -5,6 +5,15 @@ const outputDiv = document.querySelector(".output");
 
 const checkButton = document.querySelector("#check");
 
+const alertCloseBtn = document.querySelector("#alert-close");
+const alertDiv = document.querySelector("#alert-box");
+
+alertCloseBtn.addEventListener("click",()=>{
+    console.log("btn clicked");
+    alertDiv.style.display = "none"; 
+})
+
+
 const outputlucky = "<div><h2>Heeey You are a Lucky <h2><img class ='resultImage' width='100%' src='images/luckyImage.svg' /></div>"
 const outputnotlucky = "<div><h1>Sorry ,Your Birthdate is not a lucky number </h1><img class ='resultImage' width='100%' src= 'images/notLucky.svg'/></div>"
 
