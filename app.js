@@ -28,7 +28,7 @@ checkButton.addEventListener("click",(e)=>{
     var sum=0;
     
     // converting string to letter
-    for( ele in dateString){
+    for( ele of dateString){
         sum = sum + Number(ele);
     }
 
@@ -42,7 +42,7 @@ checkButton.addEventListener("click",(e)=>{
         return outputDiv.innerHTML = outputlucky;
     }
     else{
-            console.log("NOt Lucky");
+            console.log("NOt Lucky",sum);
             return outputDiv.innerHTML = outputnotlucky;
            
     }
